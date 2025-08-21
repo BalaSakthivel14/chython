@@ -29,6 +29,12 @@ from ._reductive_amination import template as reductive_amination_template
 from ._sonogashira import template as songashira_template
 from ._sulfonamidation import template as sulfonamidation_template
 from ._suzuki_miyaura import template as suzuki_miyaura_template
+from ._aza_cope_mannich import template as aza_cope_mannich_template
+from ._DIBAL_reduction import template as DIBAL_reduction_template
+from ._diels_alder import template as diels_alder_template
+from ._evans_aldol import template as evans_aldo_template
+from ._gilman import template as gilman_template
+from ._heck import template as heck_template
 from ..reactor import Reactor, fix_mapping_overlap
 from ... import smarts, ReactionContainer, MoleculeContainer
 
