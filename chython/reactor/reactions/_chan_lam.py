@@ -22,7 +22,7 @@
 
 template = {
     'name': 'Chan-Lam Reaction',
-    'description': 'Cross-coupling reaction between an aryl or alkyl boronic acid and an amine or alcohol',
+    'description': 'Cross-coupling reaction between an aryl or alkyl boronic acid and an N-H, COOH containing compounds',
     'templates': [
         {
             'A': [
@@ -30,14 +30,14 @@ template = {
                 '[N;D1;x0;z1:1][C;a;M]',
                 # Alk2NH
                 '[N;D2;x0;z1:1]([C;z1;x1;M])[C;z1;x1;M]',
-                # Pyrrole
+                # Indole
                 '[N;h1;a;r5:1]:[C;a;r6;M]',
-                # Lactom Ring-NH,
+                # Azetidin-2-one,
                 '[N;D2;x0;z1:1]([C;z2;x2;M])[C;z1;x1;M]',
                 # O=C-NH2
                 '[N;D1;x0;z1:1][C;z2;x2;M]=[O;x0;z2;M]',
                 # RCOOH
-                '[O;x0;z2;M]=[C;x2;M][O;D1:1]'
+                '[O;D1;z1;x0:1][C;D3;x2;z2;M]=[O;M]'
             ],
             'B': [
                 # Ar-B
@@ -48,7 +48,6 @@ template = {
                 '[B;D3;x2;z1:3]([O:4])([O:5])-[C;D2;x1;z3:2]',
                 # B-C(alk)
                 '[B;D3;x2;z1:3]([O:4])([O:5])-[C;x1,x2;z1:2]'
-                
             ],
             'product': '[A:1]-[A:2]',
             'alerts': [],
