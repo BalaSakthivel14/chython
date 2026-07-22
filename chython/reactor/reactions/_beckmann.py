@@ -34,16 +34,16 @@ template = {
                 # Alk-C(=O)-Subs-Alk
                 '[O;z2;x0;M]=[C;D3;x1;z2:1]([C;z1;M])[C;D3;z1:2]',
                 # Alk-C(=O)-Alk
-                '[O;z2;x0;M]=[C;D3;x1;z2:1]([C;z1;M])[C;z1:2]'
-                
+                '[O;z2;x0;M]=[C;D3;x1;z2:1]([C;z1;M])[C;D2;z1:2]'
+
             ],
             'B': [
-                # NH4OH
-                '[N+;z1:3].[O-:4]'
+                # NH2OH
+                '[N;D1;z1:3][O:4]'
             ],
             'product': '[A:1][A:3][A:2]',
             'alerts': [],
-            'ufe':{
+            'ufe': {
                 'A': 2,
                 'B': 4
             }
@@ -52,20 +52,19 @@ template = {
         {
             'A': [
                 # R-CHO
-                '[O;z2;x0;M]=[C;D2;x1;z2:1]'
-                
+                '[O;z2;x0:1]=[C;D2;x1;z2:2]'
             ],
             'B': [
-                # NH4OH
-                '[N+;z1:3].[O-:4]'
+                # NH2OH
+                '[N;D1;z1:3][O:4]'
             ],
-            'product': '[A:1][A:3]',
+            'product': '[A:2]#[A:3]',
             'alerts': [],
-            'ufe':{
+            'ufe': {
                 'A': 2,
                 'B': 4
             }
         },
     ],
-    'alerts':[]
+    'alerts': []
 }
