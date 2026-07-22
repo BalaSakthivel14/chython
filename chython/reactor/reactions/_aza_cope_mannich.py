@@ -21,10 +21,9 @@
 
 
 template = {
-    'name': 'Aza-Cope Mannich Reaction',
-    'description': 'Sigmatropic rearrangement of an unsaturated iminium cation to complex cyclic molecules',
+    'name' : 'Aza-Cope Mannich Reaction',
+    'description': 'Converts an alkyne-tethered piperidine into fused tricyclic amines via 3-aza-Cope/Mannich cyclization',
     'templates' : [
-        #Three Aza-Cope Mannich Reaction
         {
             'A': [
                 # Alk#Alk-Alk-N
@@ -38,25 +37,6 @@ template = {
             'alerts': [],
             'ufe': {
                 'A': '[A:1][A:6]'
-            }
-        },
-        #Two Aza-Cope Mannich Reaction
-        {
-            'A': [
-                # Iminium
-                '[N;D2;x0;z1:1][C;x1;z1:2][C;x1;z1:3]([O:4])[C;D2;x0;z2:5]=[C;x0;z2:6]'
-            ],
-            'B': [
-                # Formaldehyde
-                '[O;z2;x0:7]=[C;D1;x1;z2:8]',
-                # 2,2-dimethoxypropane
-                '[O;z1:7]-[C;x2;z1:8]-[O;z1:9]'
-            ],
-            'product': '[A:1]1[A:2][A:5]([A:3]=[A:4])[A:6][A:8]1',
-            'alerts': [],
-            'ufe': {
-                'A': '[A:1][A:6]',
-                'B': '[A:7][A:9]'
             }
         }
     ],
