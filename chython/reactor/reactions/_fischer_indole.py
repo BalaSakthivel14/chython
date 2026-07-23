@@ -22,18 +22,17 @@
 
 template = {
     'name': 'Fischer Indole Synthesis',
-    'description': 'Cyclization of arylhydrazones woth aldehyde or ketone to indoles',
+    'description': 'Cyclization of arylhydrazones with aldehyde or ketone to indoles',
     'templates': [
         {
             'A': [
-                # Phenylhydrazine
+                # Arylhydrazone
                 '[C;a:1]:[C;a;M][N;x1;z1:2][N;D1;x1;z1:3]'
-                             
             ],
             'B': [
-                # Alk-C=O
-                '[O;D1;z2;x0:4]=[C;D3;x1;z2:5]([C;z1;x0;M])[C;D2,D3;z1;x0:6]',
-                # Alk-CHO
+                # Alk-Ketone
+                '[O;D1;z2;x0:4]=[C;D3;x1;z2:5][C;D2,D3;z1;x0:6]',
+                # Alk-Aldehyde
                 '[O;D1;z2;x0:4]=[C;D2;x1;z2:5][C;D2,D3;z1;x0:6]',
                 # Alk-OH
                 '[O;D1;x0;z1:4][C;D3;x1;z1:5]([C;z1;x0;M])[C;D2;z1;x0:6]'
