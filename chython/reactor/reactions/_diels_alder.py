@@ -30,13 +30,13 @@ template = {
                 # Conjugated diene
                 '[C;D1;z2:1]=[C;z2:2][C;z2:3]=[C;D1;z2:4]',
                 # Conjugated diene-EDG
-                # Conjugated diene-Hetero
+                # Conjugated diene-Het
                 '[C;x0;z2:1]=[C;z2:2][C;z2:3]=[C;x1;z2:4][O,N,Cl,Br,I;M]',
                 # Conjugated diene-Alk
                 '[C;x0;z2:1]=[C;z2:2][C;z2:3]=[C;x0;z2:4][C;z1,z2;M]',
                 # Conjugated diene-Ar
                 '[C;x0;z2:1]=[C;z2:2][C;z2:3]=[C;x0;z2:4][C;a;M]',
-                # Conjugated diene C=O-Hetero
+                # Conjugated diene C=O-Het
                 '[O;x0;z2:1]=[C;x1;z2:2][C;z2:3]=[C;x1;z2:4][O,N,Cl,Br,I;M]',
                 # Conjugated diene C=O-Alk
                 '[O;x0;z2:1]=[C;x1;z2:2][C;z2:3]=[C;x0;z2:4][C;z1,z2;M]',
@@ -53,7 +53,7 @@ template = {
                 # Dienophile-C=O
                 '[C;D1,D2;z2:5]=[C;D2;x0;z2:6][C;x1,x2;z2;M]=[O;M]',
                 # Dienophile-CO-Alk
-                '[C;D1,D2;z2:5]=[C;D2;x0;z2:6][C;x1;z2;M]-[O;M]',
+                '[C;D1,D2;z2:5]=[C;D2;x0;z2:6][C;x1;z1;M]-[O;M]',
                 # Dienophile-CF3
                 '[C;D1,D2;z2:5]=[C;D2;x0;z2:6][C;x3;z2;M]-[F;M]',
                 # Dienophile-C#N
@@ -78,7 +78,7 @@ template = {
                 # Conjugated diene
                 '[C;D1;z2:1]=[C;z2:2][C;z2:3]=[C;D1;z2:4]',
                 # Conjugated diene-EDG
-                # Conjugated diene-Hetero
+                # Conjugated diene-Het
                 '[C;x0;z2:1]=[C;z2:2][C;z2:3]=[C;x1;z2:4][O,N,Cl,Br,I;M]',
                 # Conjugated diene-Alk
                 '[C;x0;z2:1]=[C;z2:2][C;z2:3]=[C;x0;z2:4][C;z1,z2;M]',
@@ -99,8 +99,8 @@ template = {
                 # Dienophile#CHO
                 '[C;D1,D2;x0;z3:5]#[C;D2;x0,x1;z3:6][C;x1,x2;z2;M]=[O;M]',
                 # Dienophile#CO-Alk
-                '[C;D1,D2;x0;z3:5]#[C;D2;x0;z3:6][C;x1;z2;M]-[O;M]',
-                # Dienophile#CO-Hetere
+                '[C;D1,D2;x0;z3:5]#[C;D2;x0;z3:6][C;x1;z1;M]-[O;M]',
+                # Dienophile#CO-Het
                 '[C;D1,D2;x0;z3:5]#[C;D2;x0;z3:6][C;x2;z2;M]=[O;M]',
                 # Dienophile#CF3
                 '[C;D1,D2;x0;z3:5]#[C;D2;x0;z3:6][C;x3;z2;M]-[F;M]',
