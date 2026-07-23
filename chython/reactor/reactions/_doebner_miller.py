@@ -22,19 +22,17 @@
 
 template = {
     'name': 'Doebner-Miller Reaction',
-    'description': 'Ondensation of an aniline or acetanilide with an α,β-unsaturated carbonyl to quinolines',
+    'description': 'Condensation of an aniline with an α,β-unsaturated carbonyl to quinoline',
     'templates': [
         {
             'A': [
                 # α,β-unsaturated carbonyl
                 '[O;z2;x0:1]=[C;z2;x1:2][C;z2;x0:3]=[C;D2;z2;x0:4]'
-                
+
             ],
             'B': [
-                # Aniline
+                # Ar-NH2
                 '[N;D1;x0;z1:5][C;a;M]:[C;a;D2:6]',
-                # Acetanilide
-                '[N;D2;x0;z1:5]([C;x2;z2:7]=[O:8])[C;a;M]:[C;a;D2:6]'
             ],
             'product': '[A:5]=[A:4][A:3]=[A:2][A:6]',
             'alerts': [],
@@ -44,5 +42,5 @@ template = {
             }
         }
     ],
-    'alerts' : []
+    'alerts': []
 }
