@@ -22,7 +22,7 @@
 
 template = {
     'name' : 'Eschenmoser Coupling',
-    'description': 'thioamide and an α-halocarbonyl compound to enaminones products',
+    'description': 'Thioamide and α-halocarbonyl compound to enaminones products',
     'templates': [
         {
             'A': [
@@ -31,11 +31,7 @@ template = {
             ],
             'B': [
                 # Br-CC(=O)R
-                '[Br;D1:3][C;D2;x1;z1:4][C;z2;M]=[O;M]',
-                # COOR-CBr-COOR
-                '[O;M][C;x2;z2;M](=[O;M])[C;D3;x1;z1:4]([Br;D1:3])[C;x2;z2;M](=[O;M])[O;M]',
-                # 3-bromoindolin-2-one
-                '[Br;D1:3]-[C;D3;x1;z1:4]([C;a;M])[C;x2;z2;M](=[O;M])[N;h1;M]'
+                '[Br;D1:3][C;x1;z1:4][C;z2;M]=[O;M]',
             ],
             'product': '[A:2]=[A:4]',
             'alerts': [],
