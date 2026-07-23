@@ -31,7 +31,7 @@ template = {
             ],
             'B': [
                 # Base_NaOH
-                '[Na+:3].[O-;h1:4]',
+                '[Na+:3].[O-;h1:4]'
             ],
             'product': '[A:1]-[A:4]',
             'alerts': [],
