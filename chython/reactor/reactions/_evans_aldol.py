@@ -33,8 +33,7 @@ template = {
             ],
             'B': [
                 # Acylated oxazolidinones
-                '[C;D1,D2;x0;z1:3][C;x2;z2;M](=[O;M])[N;D3;x0;z1;M][C;x3;z2;M;r5]=[O,S;M]'
-                
+                '[C;D1,D2;x0;z1:3][C;x2;z2;M](=[O;M])[N;D3;x0;z1;M][C;x3;z2;r5;M]=[O,S;M]'
             ],
             'product':'[A:1][A:2]-[A:3]',
             'alerts': [],
