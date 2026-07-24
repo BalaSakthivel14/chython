@@ -31,9 +31,9 @@ template = {
             ],
             'B': [
                 # Diethyl ethoxymethylenemalonate
-                '[C;x0;z1:3][C;x1;z1:4][O;x0;z1:5][C;x1;z2:6]=[C;D3;x0;z2:7]([C;x2;z2;M])[C;x2;z2:8]([O;x0;z1:9])=[O;M]'
+                '[C;x0;z1:3][C;x1;z1:4][O;x0;z1:5][C;x1;z2:6]=[C;D3;x0;z2:7]([C;x2;z2;M])[C;x2;z2:8](=[O:9])[O;x0;z1:10]'
             ],
-            'product': '[A:1][A:6]=[A:7][A:8][A:2]',
+            'product': '[A:1][A:6]=[A:7][A:8](=[A:9])[A:2]',
             'alerts': [],
             'ufe': {
                 'A': '[A:1][A:2]',
