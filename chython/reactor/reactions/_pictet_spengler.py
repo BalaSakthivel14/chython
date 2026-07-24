@@ -27,7 +27,7 @@ template = {
         {
             'A': [
                 # β-arylethylamine
-                '[N;D1,D2;x0;z1:1][C;x1;z1;M][C;x0;z1;M][C;a;M]:[C;a;D2:2]'
+                '[N;D1,D2;x0;z1:1][C;x1;z1;M][C;z1;M][C,N;a;M]:[C;a;D2:2]'
             ],
             'B': [
                 # Carbonyl
