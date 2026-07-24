@@ -22,8 +22,9 @@
 
 template = {
     'name': 'Gilman Reaction',
-    'description': 'Acid chlorides and α,β-unsaturated carbonyl compounds reaction with Gilman reagents to form C-C bonds',
+    'description': 'α,β-unsaturated carbonyl, acid chlorides and epoxy compounds reaction with Gilman reagents to form C-C bonds',
     'templates': [
+        # α, β-unsaturated carbonyl
         {
             'A': [
                 # α,β-unsaturated ketones
@@ -31,8 +32,8 @@ template = {
             ],
             'B':[
                 # Gilman Reagent
-                '[C;x1;z1,z2:3][Cu;x0;-:4].[Li;+:5]',
-                '[C;a:3][Cu;-:4].[Li;+:5]'
+                '[C;x1;z1,z2:3][Cu-:4].[Li+:5]',
+                '[C;a:3][Cu-:4].[Li+:5]'
              ],
             'product': '[A:1][A:2]-[A:3]',
             'alerts': [],
@@ -41,17 +42,18 @@ template = {
                 'B': '[A:3]'
             }
         },
+        # Acid chlorides
         {
             'A': [
-                # Acid Chloride-Alk
+                # Acid chloride-Alk
                 '[Cl;D1:1][C;D3;x2;z2:2]([C;x0;z1;M])=[O;M]',
-                # Acid Chloride-Ar
+                # Acid chloride-Ar
                 '[Cl;D1:1][C;D3;x2;z2:2]([C;a;M])=[O;M]',
             ],
             'B':[
                 # Gilman Reagent
-                '[C;x1;z1,z2:3][Cu;x0;-:4].[Li;+:5]',
-                '[C;a:3][Cu;-:4].[Li;+:5]'
+                '[C;x1;z1,z2:3][Cu-:4].[Li+:5]',
+                '[C;a:3][Cu-:4].[Li+:5]'
              ],
             'product': '[A:2]-[A:3]',
             'alerts': [],
@@ -60,6 +62,24 @@ template = {
                 'B': '[A:3]'
             }
         },
+        # Epoxide
+        {
+            'A': [
+                # Epoxide
+                '[O;D2;z1;x0:1]1[C;z1;x1;r3:2][C;z1;x1;r3:3]1'
+            ],
+            'B':[
+                # Gilman Reagent
+                '[C;x1;z1,z2:4][Cu-:5].[Li+:6]',
+                '[C;a:4][Cu-:5].[Li+:6]'
+             ],
+            'product': '[A:3]([A:1])[A:2]-[A:4]',
+            'alerts': [],
+            'ufe': {
+                'A': '[A:1][A:2]',
+                'B': '[A:3]'
+            }
+        }
     ],
     'alerts' : []
 }
