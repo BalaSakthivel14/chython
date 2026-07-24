@@ -22,7 +22,7 @@
 
 template = {
     'name': 'Perkin Reaction',
-    'description': 'Condensation of an aromatic aldehyde and an acid anhydride to α,β-unsaturated aromatic acid',
+    'description': 'Condensation of an aromatic aldehyde and an acidic anhydride to α,β-unsaturated aromatic acid',
     'templates': [
             {
             'A': [
@@ -31,7 +31,7 @@ template = {
             ],
             'B': [
                 # Acid anhydride
-                '[C;D1;x0;z1:3][C;x2;z2:4](=[O;M])[O;x0;z1:5][C;x2;z2:6](=[O:7])[C;x0;z1:8]'
+                '[C;x0;z1:3][C;x2;z2:4](=[O;M])[O;x0;z1:5][C;x2;z2:6](=[O:7])[C;x0;z1:8]'
             ],
             'product': '[A:2]=[A:3][A:4][A:5]',
             'alerts': [],
