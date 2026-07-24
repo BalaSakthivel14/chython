@@ -28,7 +28,7 @@ template = {
         {
             'A': [
                 # α,β-unsaturated ketones
-                '[O;D1;x0;z2;M]=[C;x1,x2;z2;M][C;x0;z2:1]=[C;D2;x0;z2:2]'
+                '[O;D1;x0;z2;M]=[C;D3;x1,x2;z2;M][C;D2;x0;z2:1]=[C;D1,D2;x0;z2:2]'
             ],
             'B':[
                 # Gilman Reagent
