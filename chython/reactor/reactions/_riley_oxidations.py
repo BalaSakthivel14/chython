@@ -21,16 +21,14 @@
 
 
 template = {
-    'name': 'Riley Oxidations',
+    'name': 'Riley Oxidation',
     'description': 'Oxidation of allylic C-H bonds with selenium oxide',
     'templates': [
-        # Template 1: Alkene group(R-C=C-R)
+        # Template 1: Ketone with alpha hydrogen
         {
             'A':[
-                # R-C(R)=C
-                '[C;D1;z1;x0:1][C;D3;z2;x0;M]=[C;z2;M]',
-                # R-C=C
-                '[C;D1;z1;x0:1][C;D2;z2;M]=[C,O;z2;M]',
+                # Ketone with ⍺-H
+                '[C;D2;z1;x0:1][C;D3;z2;x1;M]=[O;M]',
                 # C-Ar
                 '[C;D1;z1;x0:1]-[C;a;M]'
             ],
@@ -45,11 +43,28 @@ template = {
                 'B': '[A:2][A:3][A:4]'
             }
         },
-        # Template 2: Alkyne group(R-C#C-R)
+        # Template 2: Allylic group(C=CC)
+        {
+            'A':[
+                # Allylic
+                '[C;z2;x0;M]=[C;z2;x0;M][C;D2;z1;x0:1]'
+            ],
+            'B': [
+                # SeO2
+                '[O;D1;z2;x1:2]=[Se;z3;x2:3]=[O;D1;z2;x1:4]'
+            ],
+            'product': '[A:1]-[A:2]',
+            'alerts': [],
+            'ufe':{
+                'A': '[A:1][At;M]',
+                'B': '[A:2][A:3][A:4]'
+            }
+        },
+        # Template 3: Alkyne group(R-C#C-R)
         {
             'A':[
                 # RC#CR
-                '[C;D2;z3;x0:1]#[C;D2;z3;x0:2]'  
+                '[C;D2;z3;x0:1]#[C;D2;z3;x0:2]'
             ],
             'B': [
                 # SeO2
@@ -62,12 +77,11 @@ template = {
                 'B': '[A:2][A:3][A:4]'
             }
         },
-        # Template 3: Alkyne group(R-C#C-H)
+        # Template 4: Alkyne group(R-C#C-H)
         {
             'A':[
                 # RC#CH
                 '[C;D2;z3;x0:1]#[C;D1;z3;x0:2]'
-                
             ],
             'B': [
                 # SeO2
