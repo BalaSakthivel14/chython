@@ -71,7 +71,7 @@ from ._perkin import template as perkin_template
 from ._pictet_spengler import template as pictet_spengler_template
 from ._prins_pinacol import template as prins_pinacol_template
 from ._reformatsky import template as reformatsky_template
-from ._riley_oxidations import template as riley_oxidations_template
+from ._riley_oxidation import template as riley_oxidation_template
 from ._sandmayer import template as sandmayer_template
 from ._schotten_baumann import template as schotten_baumann_template
 from ._stille_coupling import template as stille_coupling_template
