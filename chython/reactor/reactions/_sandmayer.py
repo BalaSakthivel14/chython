@@ -22,7 +22,7 @@
 
 template = {
     'name': 'Sandmayer Reaction',
-    'description': 'Aryl amine into an aryl halide or cyanide using copper',
+    'description': 'Aryl amine into an aryl halide or nitrile',
     'templates': [
             {
             'A' : [
@@ -33,9 +33,9 @@ template = {
                 # Cu-X
                 '[Cl,Br;D1:3]-[Cu:4]',
                 # KI
-                '[I-;D1:3]-[K+:4]',
+                '[K+:4].[I-:3]',
                 # Cu-CN
-                '[N;D1;z3;x0;M]#[C;D2;x2:3]-[Cu:4]'
+                '[C-:3]#[N;M].[Cu+:4]'
             ],
             'product':'[A:3]-[A:2]',
             'alerts':[],
