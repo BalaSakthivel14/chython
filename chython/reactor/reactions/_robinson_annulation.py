@@ -21,20 +21,20 @@
 
 template = {
     'name': 'Robinson Annulation',
-    'description': 'Cyclohexanone reaction with alpha_beta unsaturated ketone',
+    'description': 'Cyclohexanone reaction with Methyl vinyl ketone to six membered α,β-unsaturated ketone',
     'templates': [
         {
             'A': [
-                # α,β-Unsaturated ketone
+                # Methyl vinyl ketone
                 '[C;z2;x0:1]=[C;z2;x0:2][C;z2;x1;M](=[O;M])[C;z1;x0:3]'
             ],
             'B':[
-                # Cyclic diKetone
-                '[O;D1;x0;z2:4]=[C;D3;x1;z2;r4,r5,r6,r7,r8:5][C;D3;z1;x0:6]([C;M])[C;z2;x1;M]=[O;M]',
-                # Enolate
-                '[O;D1;x0;z2:4]=[C;D3;x1;z2;r4,r5,r6,r7,r8:5]([C;D2;z1;x0;M])[C;D3;z1;x0:6]',
+                # Hexane 1,3 dione
+                '[O;D1;x0;z2:4]=[C;D3;x1;z2;r4,r5,r6,r7,r8:5][C;D3;z1;x0:6]([C;z1;M])[C;z2;x1;M]=[O;M]',
                 # Cyclohexanone
-                '[O;D1;x0;z2:4]=[C;D3;x1;z2;r4,r5,r6,r7,r8:5]([C;D2;z1;x0;M])[C;D2;z1;x0:6]'
+                '[O;D1;x0;z2:4]=[C;D3;x1;z2;r4,r5,r6,r7,r8:5]([C;D2;z1;x0;M])[C;D2,D3;z1;x0:6]',
+                # Benzofuran
+                '[O;D1;x0;z2:4]=[C;D3;x1;z2;r4,r5,r6,r7,r8:5]([C;a;M])[C;D3;z1:6]'
             ],
             'product': '[A:2][A:1]-[A:6][A:5]=[A:3]',
             'alerts': [],
