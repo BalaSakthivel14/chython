@@ -21,26 +21,20 @@
 
 template = {
     'name': 'Mannich Reaction',
-    'description': 'Three-component aminomethylation from amine, aldehyde and acidic methylene moiety',
+    'description': 'Three-component aminomethylation from secondary amine, aldehyde and Enolizable ketone',
     'templates': [
         {
             'A': [
-                # Acidic methylene
-                '[O;z2;x0;M]=[C;D3;x1;z2;M][C;x0;z1:1]'
+                # Enolizable ketone
+                '[O;z2;x0;M]=[C;D3;z2;M][C;D2;x0,x1;z1:1]'
             ],
             'B': [
-                 # Ar-CHO
+                # Ar-CHO
                 '[O;z2;x0:2]=[C;D2;x1;z2:3][C;a;M]',
-                # Alkyl-CHO
-                '[O;z2;x0:2]=[C;D2;x1;z2:3][C;z1;M]',
-                # CH2O
-                '[O;z2;x0:2]=[C;D1,D2;x1;z2:3]'
+                # Alk-CHO
+                '[O;z2;x0:2]=[C;D2;x1;z2:3][C;z1;M]'
             ],
             'C': [
-                # Ar-NH2
-                '[N;D1;x0;z1:4][C;a;M]',
-                # Alk-NH2
-                '[N;D1;x0;z1:4][C;z1;x1;M]',
                 # Ar-NH-Ar
                 '[N;D2;x0;z1:4]([C;a;M])[C;a;M]',
                 # Alk-NH-Ar
