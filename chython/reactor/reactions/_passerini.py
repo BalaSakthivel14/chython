@@ -21,7 +21,7 @@
 
 template = {
     'name': 'Passerini Reaction',
-    'description': 'Reaction of carboxylic acid, carbonyl compound and isocyanide to α-hydroxy carboxamides',
+    'description': 'Reaction of carboxylic acid, carbonyl compound and isocyanide to α-acyloxy carboxamides',
     'templates': [
         {
             'A': [
@@ -29,8 +29,10 @@ template = {
                 '[O;D1;x0;z1:2][C;D3;x2;z2:1]=[O;x0;z2:3]'
             ],
             'B': [
+                # Ar-CHO
+                '[O;z2;x0:4]=[C;D2;x1;z2:5][C;a;M]',
                 # Alk-CHO
-                '[O;z2;x0:4]=[C;D2;x1;z2:5][C,N;z1;M]'
+                '[O;z2;x0:4]=[C;D2;x1;z2:5][C;z1;M]'
             ],
             'C': [
                 # Isocyanides
