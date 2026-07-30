@@ -20,8 +20,8 @@
 #
 
 template = {
-    'name': 'Pfitzinger-Borsche Reaction',
-    'description': 'Isatin with base and a carbonyl compound to quinoline-4-carboxylic acids',
+    'name': 'Pfitzinger Reaction',
+    'description': 'Isatin and a α-methylene carbon with base compound to quinoline-4-carboxylic acids',
     'templates': [
         {
             'A': [
@@ -29,12 +29,10 @@ template = {
                 '[N;D2;x0;z1;r5:1]([C;a;M])[C;D3;x2;z2:2](=[O;M])[C;D3;x1;z2:3]=[O:4]'
             ],
             'B': [
-                # α-Methylene carbonyl
+                # α-methylene carbon
                 '[O;D1;z2;x0:5]=[C;x1;z2:6][C;D2;x0,x1;z1:7]'
             ],
             'C': [
-                # Alk-OH
-                '[O;D1;x0;z1:8][C;x1;z1;M]',
                 # Base KOH
                 '[O-:8].[K+:9]'
                 ],
