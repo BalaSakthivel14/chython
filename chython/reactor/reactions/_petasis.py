@@ -21,7 +21,7 @@
 
 template = {
     'name': 'Petasis Reaction',
-    'description': 'Combines a carbonyl derivative, an amine, and a boronic acid to produce substituted amines',
+    'description': 'Combines a aldehyde, an amine, and a boronic acid to produce substituted amines',
     'templates': [
             {
             'A': [
@@ -38,9 +38,9 @@ template = {
             ],
             'B': [
                 # Ar-CHO
-                '[O;z2;x0:2]=[C;D2,D3;x1;z2:3][C;a;M]',
+                '[O;z2;x0:2]=[C;D2;x1;z2:3][C;a;M]',
                 # Alk-CHO
-                '[O;z2;x0:2]=[C;D2,D3;x1;z2:3][C;z1,z2;M]'
+                '[O;z2;x0:2]=[C;D2;x1;z2:3][C;z1,z2;M]'
             ],
             'C': [
                 # Ar-B
