@@ -21,12 +21,12 @@
 
 template = {
     'name':'Gewald Aminothiophene Synthesis',
-    'description': 'Synthesis of 2-aminothiophenes using sulfur, an α-methylene carbonyl and α-cyanoester',
+    'description': 'Synthesis of 2-aminothiophenes using sulfur, enolizable ketone and α-cyanoester',
     'templates': [
         {
             'A': [
-                # α-Methylene carbonyl
-                '[O;D1;z2:1]=[C;z2:2][C;D2;x0;z1:3]'
+                # Enolizable ketone
+                '[O;D1;z2:1]=[C;D3;x1;z2:2][C;D2;x0;z1:3]'
             ],
             'B': [
                 # α-Cyanoester

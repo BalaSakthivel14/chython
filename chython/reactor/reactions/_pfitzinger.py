@@ -21,7 +21,7 @@
 
 template = {
     'name': 'Pfitzinger Reaction',
-    'description': 'Isatin and a α-methylene carbon with base compound to quinoline-4-carboxylic acids',
+    'description': 'Isatin and a enolizable ketone with base compound to quinoline-4-carboxylic acids',
     'templates': [
         {
             'A': [
@@ -29,8 +29,8 @@ template = {
                 '[N;D2;x0;z1;r5:1]([C;a;M])[C;D3;x2;z2:2](=[O;M])[C;D3;x1;z2:3]=[O:4]'
             ],
             'B': [
-                # α-methylene carbon
-                '[O;D1;z2;x0:5]=[C;x1;z2:6][C;D2;x0;z1:7]'
+                # Enolizable ketone
+                '[O;D1;z2;x0:5]=[C;D3;x1;z2:6][C;D2;x0;z1:7]'
             ],
             'C': [
                 # Base KOH
