@@ -21,7 +21,7 @@
 
 
 template = {
-    'name': 'Sandmayer Reaction',
+    'name': 'Sandmeyer Reaction',
     'description': 'Aryl amine into an aryl halide or nitrile',
     'templates': [
             {
