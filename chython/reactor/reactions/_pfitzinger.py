@@ -30,7 +30,7 @@ template = {
             ],
             'B': [
                 # α-methylene carbon
-                '[O;D1;z2;x0:5]=[C;x1;z2:6][C;D2;x0,x1;z1:7]'
+                '[O;D1;z2;x0:5]=[C;x1;z2:6][C;D2;x0;z1:7]'
             ],
             'C': [
                 # Base KOH
