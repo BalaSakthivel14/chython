@@ -26,20 +26,21 @@ template = {
     'templates': [
         {
             'A': [
-                #C(=O)O
+                # R-COOH
                 '[O;D1;x0;z1:2][C;x2;z2:1]=[O;M]'
             ],
             'B': [
-                #Alk-NH2
+                # Alk-NH2
                 '[N;D1;x0;z1:3][C;x1;z1;M]'
             ],
-            'C': [            
-                #R-CHO
+            'C': [
+                # Ar-CHO
                 '[O;x0;z2:4]=[C;D2;x1;z2:5][C;a;M]',
+                # Alk-CHO
                 '[O;x0;z2:4]=[C;D2;x1;z2:5][C;x0;z1;M]'
             ],
             'D': [
-                #CN
+                # Isocyanides
                 '[C-;D1;x1;z3:6]#[N+;D2;x0;z3:7]'
             ],
             'product': '[A:1][A:3][A:5][A:6](=[A:2])[A:7]',
