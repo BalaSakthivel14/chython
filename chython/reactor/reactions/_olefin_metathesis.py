@@ -20,40 +20,24 @@
 #
 
 
-smarts_A = ['[C;D1;z2;x0:1]=[C;z2;x0:2]' + '[A;M]'*x + '[C;z2;x0:3]=[C;D1;z2;x0:4]' for x in range(2,20)]     
-smarts_B = ['[C;D1;z2;x0:1]=[C;z2;x0:2][C;z1;x0;M][C;a;M]:[C;a;M]' + '[A;M]'*x + '[C;z2;x0:3]=[C;D1;z2;x0:4]' for x in range(0,20)]
-smarts_all = smarts_A + smarts_B 
+smarts_A = ['[C;D1;z2;x0:1]=[C;z2;x0:2]' + '[C,O,N;M]' * x + '[C;z2;x0:3]=[C;D1;z2;x0:4]' for x in range(2, 20)]
+smarts_B = ['[C;D1;z2;x0:1]=[C;z2;x0:2][C;z1;x0;M][C;a;M]:[C;a;M]' + '[C,O,N;M]' * x + '[C;z2;x0:3]=[C;D1;z2;x0:4]' for
+            x in range(0, 20)]
+smarts_all = smarts_A + smarts_B
 template = {
     'name': 'Olefin Metathesis',
     'description': 'Rearranges the fragments of alkenes and reforming carbon-carbon double bonds',
     'templates': [
-        # Intramolecular olefin metathesis (ring-closing metathesis)
+        # Intramolecular olefin metathesis (Ring-closing metathesis)
         {
             'A': smarts_all,
-                                     
+
             'product': '[A:2]=[A:3]',
-            'alerts' : [],
+            'alerts': [],
             'ufe': {
-                'A': '[A:1][A:4]'   
+                'A': '[A:1][A:4]'
             }
-        },
-        # Interamolecular olefin metathesis (cross-metathesis)
-        {
-            'A':[
-                # C=C
-                '[C;D1;z2;x0:1]=[C;D2,D3;z2;x0:2]'
-            ],
-            'B': [
-                # C=C
-                '[C;D1;z2;x0:3]=[C;D2,D3;z2;x0:4]'
-            ],
-            'product': '[A:2]=[A:4]',
-            'alerts' : [],
-            'ufe': {
-                'A': 1,
-                'B': 3
-            }
-        } 
+        }
     ],
     'alerts': []
 }
