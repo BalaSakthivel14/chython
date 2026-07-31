@@ -26,8 +26,8 @@ template = {
     'templates' : [
         {
             'A':  [
-                #Alcohol
-                '[O;D1;x0;z1:1][C;D2;D3;x1;z1:2]'
+                # Alk-OH
+                '[O;D1;x0;z1:1][C;D2,D3;x1;z1:2]'
             ],
             'product': '[A:1]=[A:2]',
             'alerts': [],
