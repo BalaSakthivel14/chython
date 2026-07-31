@@ -21,14 +21,16 @@
 
 
 template = {
-    'name': 'DIBAL_Reduction',
+    'name': 'DIBAL-H Reduction',
     'description': 'Reducing esters and nitriles to aldehydes using DIBAL-H',
     'templates': [
         # Template 1: Ester and DIBAL-H to CHO
         {
             'A': [
-                # Ester
-                '[O;x0;z2;M]=[C;D3;x2;z2:1][O;D2;x0;z1:2]'
+                # Alk-COOR
+                '[O;x0;z2;M]=[C;D3;x2;z2:1]([C;z1;x0;M])[O;D2;x0;z1:2]',
+                # Ar-COOR
+                '[O;x0;z2;M]=[C;D3;x2;z2:1]([C;a;M])[O;D2;x0;z1:2]'
             ],
             'product': '[A:1]',
             'alerts': [],
