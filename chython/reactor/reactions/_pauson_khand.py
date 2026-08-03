@@ -19,27 +19,26 @@
 #  along with this program; if not, see <https://www.gnu.org/licenses/>.
 #
 
-#SMARST for Intramolecular aklyne and alkene Pauson-Khand reaction
-smarts_A = ['[C;x0;z3:1]#[C;x0;z3:2][C;z1;M]' + '[A;M]'*x + '[C;z1;M][C;z2;x0:3]=[C;z2;x0:4]' for x in range(1,20)]
+smarts_A = ['[C;x0;z3:1]#[C;x0;z3:2][C;M]' + '[A;M]' * x + '[C;z1;M][C;z2:3]=[C;D1;z2;x0:4]' for x in range(1, 20)]
 template = {
     'name': 'Pauson-Khand Reaction',
-    'description': 'Alkyne,alkene, and carbon monoxide combine into a α,β-cyclopentenone',
-    'templates': [       
+    'description': 'Intramolecular cycloaddition of an Alkyne,alkene, and carbon monoxide combine into a α,β-cyclopentenone',
+    'templates': [
         {
-            'A': # Intramolcular Alkyne and alkene
+            'A':  # Intramolcular Alkyne and alkene
                 smarts_A,
-            
-            'B':[
+
+            'B': [
                 # C#O
-                "[O;+:5]#[C;-:6]"
+                "[O+;D1:5]#[C-;D1:6]"
             ],
             'product': '[A:1]1=[A:2][A:3][A:4][A:6]1=[A:5]',
-               'alerts':[],
-               'ufe':{
-                   'A':'[A:1][A:2][A:3][A:4]',
-                   'B':'[A:5][A:6]'
-               }
-        } 
+            'alerts': [],
+            'ufe': {
+                'A': '[A:1][A:2][A:3][A:4]',
+                'B': '[A:5][A:6]'
+            }
+        }
     ],
     'alerts': []
 }
