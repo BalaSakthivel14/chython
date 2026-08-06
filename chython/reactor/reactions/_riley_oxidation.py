@@ -47,7 +47,7 @@ template = {
         {
             'A':[
                 # Allylic
-                '[C;z2;x0;M]=[C;z2;x0;M][C;D2;z1;x0:1]'
+                '[C;D2;z2;x0;M]=[C;D2;z2;x0;M][C;D2;z1;x0:1]'
             ],
             'B': [
                 # SeO2
