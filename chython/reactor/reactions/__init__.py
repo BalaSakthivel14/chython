@@ -80,6 +80,7 @@ from ._wittig import template as wittig_template
 from ._wolff_rearrangement import template as wolff_rearrangement_template
 from ._wurtz import template as wurtz_template
 from ._wurtz_fittig import template as wurtz_fittig_template
+from ._achmatowicz import template as achmatowicz_template
 from ..reactor import Reactor, fix_mapping_overlap
 from ... import smarts, ReactionContainer, MoleculeContainer
 
