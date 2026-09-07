@@ -51,5 +51,5 @@ template = {
             }
         },  
     ],
-    'alerts': []
+    'alerts': ['[O;x0;z2;M]=[C;D3;x2;z2;r5,r6:1][O;D2;x0;z1:2]']
 }
