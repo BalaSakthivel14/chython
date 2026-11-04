@@ -86,6 +86,7 @@ from ._schiff_base_thiazolidinone import template as schiff_base_thiazolidinone_
 from ._staudinger_cycloaddition import template as staudinger_cycloaddition_template
 from ._kochi_anderson import template as kochi_anderson_template
 from ._stolle_synthesis import template as stolle_synthesis_template
+from ._yonemitsu import template as yonemitsu_template
 from ..reactor import Reactor, fix_mapping_overlap
 from ... import smarts, ReactionContainer, MoleculeContainer
 
