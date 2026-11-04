@@ -20,25 +20,32 @@
 #
 
 template = {
-    'name': 'Stolle synthesis',
-    'description': 'Formation of oxidoles from anilines and oxalyl chloride',
+    'name': 'Yonemitsu Condensation',
+    'description': 'Indole,  aldehyde, and 1,3-dicarbonyl to produce heterocyclic derivatives',
     'templates': [
         {
             'A': [
-                # Ar-NH2
-                '[N;D1;x0;z1:1][C;a:2]:[C;D2;a:3]',
-                # Alk-NH-Ar
-                '[C;z1;x1;M][N;D2;x0;z1:1][C;a:2]:[C;D2;a:3]'
+                # Indole
+                '[N;h1;a;r5;M](:[C;D3;a;r6;M]):[C;a;r5;M]:[C;D2;a;r5:1]',
             ],
             'B': [
-                # Cl-C-COCl
-                '[Cl;D1;x0;z1:4][C;x1,x2;z1,z2:5][C;x2;z2:6](=[O;M])[Cl;D1:7]'
+                # Ar-CHO
+                '[C;a;M][C;D2;x1;z2:2]=[O:3]',
+                # Alk-CHO
+                '[C;x0;z1;M][C;D2;x1;z2:2]=[O:3]',
             ],
-            'product': '[A:1]1[A:2][A:3]-[A:5][A:6]1',
+            'C': [
+                # RCO-C-COOR
+                '[O;M]=[C;x1;z2;M][C;D2;x0;z1:4][C;x2;z2;M](=[O;M])[O;x0;z1;M]',
+                # RCOO-C-COOR
+                '[O;x0;z1;M][C;x2;z2;M](=[O;M])[C;D2;x0;z1:4][C;x2;z2;M](=[O;M])[O;x0;z1;M]'
+            ],
+            'product': '[A:1][A:2][A:4]',
             'alerts': [],
             'ufe': {
-                'A': ['A:1'],
-                'B': '[A:3][A:6]',
+                'A': 1,
+                'B': '[A:2][A:3]',
+                'C': 4
             }
         }
     ],
