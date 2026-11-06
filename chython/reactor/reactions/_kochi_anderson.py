@@ -26,7 +26,7 @@ template = {
         {
             'A':  [
                 # Quinones
-                '[O;M]=[C;D3;z2;x1;r6;M][C;D2;z2;x0;r6:1]=[C;D3;z2;x0;r6;M][C;D3;z2;x1;r6;M]=[O;M]'
+                '[O;M]=[C;D3;z2;x1;r6;M][C;D2;z2;x0;r6:1]=[C;z2;x0;r6;M][C;D3;z2;x1;r6;M]=[O;M]'
             ],
             'B':  [
                 # Alk-C(=O)O
