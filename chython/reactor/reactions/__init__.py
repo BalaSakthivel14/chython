@@ -89,6 +89,7 @@ from ._stolle_synthesis import template as stolle_synthesis_template
 from ._yonemitsu import template as yonemitsu_template
 from ._betti import template as betti_template
 from ._larock_indole_synthesis import template as larock_indole_synthesis_template
+from ._grieco_condensation import template as grieco_condensation_template
 from ..reactor import Reactor, fix_mapping_overlap
 from ... import smarts, ReactionContainer, MoleculeContainer
 
