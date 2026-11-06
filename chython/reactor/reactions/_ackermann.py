@@ -33,7 +33,7 @@ template = {
             ],
             'B': [
                 # Hal-C=C-Hal
-                '[Cl,Br,I;D1:4][C;x1;z2:5]=[C;x1;z2:6][Cl,Br,I;D1:7]',
+                '[Cl,Br,I;D1:4][C;x1;z2;r5,r6:5]=[C;x1;z2;r5,r6:6][Cl,Br,I;D1:7]',
                 # Hal-Ar-Hal
                 '[Cl,Br,I;D1:4][C;a:5]:[C;a:6][Cl,Br,I;D1:7]'
             ],
