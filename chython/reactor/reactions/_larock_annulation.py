@@ -21,7 +21,7 @@
 
 template = {
     'name': 'Larock indole synthesis',
-    'description': 'Aromatic Aldehyde, Aromiatic primary amine and 2-naphthol or 8-hydroxyquinoline to produce an α-aminobenzylphenol',
+    'description': 'Synthesize indoles from an ortho-iodoaniline and a disubstituted alkyne',
     'templates': [
         {
             'A': [
