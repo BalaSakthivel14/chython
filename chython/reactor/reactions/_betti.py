@@ -26,7 +26,7 @@ template = {
         {
             'A': [
                 # 2_Naphthol
-                '[O;D1;M][C;a;M]:[C;D2;a:1]:[C;D3;a;r6;M]:[C;D3;a;r6;M](:[C;a;r6;M]):[C;a;r6;M]',
+                '[O;D1;M][C;a;M]:[C;D2;a:1]:[C;D3;a;r6;M](:[C;a;r6;M]):[C;D3;a;r6;M](:[C;a;r6;M]):[C;a;r6;M]',
                 # 8_hydroxy_quinoline
                 '[C;D2;a:1]:[C;a;M]([O;D1;M]):[C;D3;a;r6;M](:[N;a;r6;M]):[C;D3;a;r6;M](:[C;a;r6;M]):[C;a;r6;M]'
             ],
